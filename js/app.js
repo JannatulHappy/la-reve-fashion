@@ -1,6 +1,7 @@
 const loadProducts = () => {
-  const url = `https://fakestoreapi.com/products`;
-  fetch(url)
+  // const url = `https://fakestoreapi.com/products`;
+  // fetch(url)
+  fetch('../js/data.json')
     .then((response) => response.json())
     .then((data) => showProducts(data));
 };
@@ -10,9 +11,9 @@ loadProducts();
 const showProducts = (products) => {
   const allProducts = products.map((pd) => pd);
   for (const product of allProducts) {
-    const image = product.images;
+    const image = product.image;
     const div = document.createElement("div");
-    div.classList.add("product");
+    div.classList.add("product","card-bg");
     div.innerHTML = `<div class="single-product">
       <div>
     <img class="product-image" src=${image}></img>
@@ -32,12 +33,14 @@ const addToCart = (id, price) => {
   updatePrice("price", price);
 
   updateTaxAndCharge();
+  updateTotal()
   document.getElementById("total-Products").innerText = count;
+
 };
 
 const getInputValue = (id) => {
   const element = document.getElementById(id).innerText;
-  const converted = parseInt(element);
+  const converted =parseFloat(element);
   return converted;
 };
 
@@ -46,7 +49,7 @@ const updatePrice = (id, value) => {
   const convertedOldPrice = getInputValue(id);
   const convertPrice = parseFloat(value);
   const total = convertedOldPrice + convertPrice;
-  document.getElementById(id).innerText = Math.round(total);
+  document.getElementById(id).innerText = parseFloat(total).toFixed(2);
 };
 
 // set innerText function
@@ -78,3 +81,4 @@ const updateTotal = () => {
     getInputValue("total-tax");
   document.getElementById("total").innerText = grandTotal;
 };
+

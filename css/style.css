@@ -1,10 +1,18 @@
 body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
+
+}
+.body-bg{
+  background-color: rgb(199, 167, 167);
+}
+.main{
+  width:85%;
+  margin: 0 auto;
 }
 .search-field {
   border: none;
-  border-radius: 50px;
+  /* border-radius: 50px; */
   padding: 5px;
   outline: none;
 }
@@ -18,41 +26,48 @@ body {
   border-radius: 5px;
   margin: auto;
   margin-top: 50px;
+  margin-bottom: 30px;
   border-right: none;
 }
 .search-button {
   padding: 10px 50px;
   border-radius: 25px;
-  margin-left: 20px;
+  margin-left: 21px;
 }
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 15px;
   /* border: 1px solid black; */
   text-align: center;
   width: 100%;
   margin: auto;
   align-items: center;
   justify-content: center;
+  
 }
 .single-product {
   padding: 10px;
   transition: 0.6s;
+  
 }
 .single-product:hover {
-  box-shadow: 4px 4px 7px gray;
+  box-shadow: 5px 5px 10px rgb(124, 119, 119);
   border-radius: 10px;
   border: 1px solid cyan;
 }
 .product-image {
   width: 150px;
-  height: 150px;
+  height: 200px;
+}
+.card-bg{
+background-color: rgb(245, 240, 240);
 }
 .cart {
   width: 350px;
-  /* border: 1px solid green; */
+  border: 1px solid green;
   padding: 10px;
-  box-shadow: 10px 10px 20px gray;
+  box-shadow: 10px 10px 20px rgb(126, 120, 120);
   border-radius: 5px;
   margin-right: 30px;
   position: fixed;
