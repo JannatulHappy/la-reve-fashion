@@ -21,7 +21,7 @@ const showProducts = (products) => {
       <p>Category: ${product.category}</p>
       <p>${product.rating.rate}<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><br>${product.rating.count} people have rated this product</p>
       <h2>Price: $ ${product.price}</h2>
-      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now me-1 la-reve-button text-uppercase ">add to cart</button>
+      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now me-1  la-reve-button text-uppercase ">add to cart</button>
       <button id="details-btn" class=" ms-2 la-reve-button details-button text-uppercase  ">Details</button></div>
       `;
     document.getElementById("all-products").appendChild(div);
@@ -70,7 +70,6 @@ const updateTaxAndCharge = () => {
     setInnerText("total-tax", priceConverted * 0.4);
   }
 };
-
 //grandTotal update function
 const updateTotal = () => {
   const grandTotal =
