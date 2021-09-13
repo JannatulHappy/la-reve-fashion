@@ -13,7 +13,7 @@ body {
 }
 .body-bg{
   /* background-color: #dec8b3 */
-  background-color:#c9e2eb
+  background-color:#c9e2eb;
 }
 a{
   text-decoration: none;
@@ -32,17 +32,19 @@ a{
   color:#c2aa8d;
 }
 .la-reve-button{
-  /* background-color: rgb(187, 97, 84); */
-  background-color: #c3836d;
+  background-color: #b37662;
   font-size: 1rem;
   font-weight: 500;
-  color:rgb(247, 245, 245);
+  color:rgb(255, 255, 255);
   border:1px solid #c3836d;
   font-weight: 600;
   padding: 0.58rem 1rem;
   border-radius: 10px;
   outline: 0;
   border: 0;
+}
+.details-button{
+  background-color: #5a7580;;
 }
 /* navigation css styles */
 #header .fixed-top{
@@ -81,9 +83,7 @@ a{
   width:250px
 }
 .product{
-  /* background-color:#f1c2b3; */
   background-color:#f1c2b3;
-
   padding-top: 27px;
   border-radius: 10px;
 }
