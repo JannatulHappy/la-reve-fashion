@@ -107,7 +107,6 @@ a{
 .single-product:hover {
   box-shadow: 5px 5px 10px rgb(107, 50, 50);
   border-radius: 10px;
-  border: 1px solid rgb(44, 47, 47);
 }
 .product-image {
   width: 140px;
