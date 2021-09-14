@@ -103,7 +103,7 @@ a{
   background-color:#fffefe
 }
 .single-product:hover {
-  box-shadow: 5px 5px 10px rgb(107, 50, 50);
+  box-shadow: 5px 5px 12px rgb(107, 50, 50);
   border-radius: 10px;
 }
 .product-image {
@@ -114,9 +114,9 @@ a{
   color:rgb(201, 143, 50)
 }
 .cart {
-  width: 347px;
+  width: 330px;
   border: 1px solid green;
-  padding: 8px 0px;
+  padding: 11px 0px;
   background-color: rgb(248, 245, 245);
   box-shadow: 5px 5px 15px rgb(139, 136, 136);
   border-radius: 5px;
