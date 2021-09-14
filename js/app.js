@@ -19,7 +19,7 @@ const showProducts = (products) => {
       </div>
       <h6 class="fw-bold">${product.title.slice(0,36)}</h6>
       <p>Category: ${product.category}</p>
-      <p>Rating : ${product.rating.rate}<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><br>${product.rating.count} people have rated this product</p>
+      <p>Rating : ${product.rating.rate}<i class="fas fa-star"></i><br>${product.rating.count} people have rated this product</p>
       <h2>Price: $ ${product.price}</h2>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now mt-4 la-reve-button text-uppercase ">add to cart</button>
       <button id="details-btn" class="mt-4 la-reve-button  details-button text-uppercase ">Details</button></div>
